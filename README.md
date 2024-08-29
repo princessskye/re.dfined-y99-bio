@@ -44,7 +44,7 @@ Before you start, ensure you have the following:
 2. **Install required modules:**
    - Open a terminal and run:
      ```bash
-     pip3 install flask requests
+     pip3 install flask requests aiotube
      ```
 
 ## Getting API Keys for Last.fm
