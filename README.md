@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Y99 Bio Updater is a Python application designed to automatically update your Y99 bio with the current song you're listening to. By integrating with YouTube and Last.fm APIs, this app fetches the song information and updates your bio accordingly. This README provides a comprehensive guide to set up and configure the app.
+RE.DFINED Y99 BIO is a Python application designed to automatically update your Y99 bio with the current song you're listening to. By integrating with YouTube and Last.fm APIs, this app fetches the song information and updates your bio accordingly. This README provides a comprehensive guide to set up and configure the app.
 
 ## Prerequisites
 
@@ -97,8 +97,6 @@ Copy this session token and ensure it is used in your application as required.
 
 - **API Errors:** Ensure that your API keys are correctly configured and have the necessary permissions.
 - **Network Issues:** Verify your internet connection and check the network settings.
-
-For further assistance, please refer to the [official documentation](https://example.com) or contact support.
 
 Have fun with your cool new Bio
 ```
