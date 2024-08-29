@@ -71,7 +71,7 @@ api_key = 'LAST_FM_API_HERE'
 youtube_api_key = 'YOUTUBE_API_HERE'
 ```
 
-# API-Daten
+# API-DATA
 api_key = 'LAST_FM_API_HERE'
 youtube_api_key = 'YOUTUBE_API_HERE'
 Replace `'LAST_FM_API_HERE'` with your Last.fm API Key and `'YOUTUBE_API_HERE'` with your YouTube Data API Key.
