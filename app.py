@@ -3,7 +3,7 @@ import requests
 import time
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Sollte sicher und einzigartig sein
+app.secret_key = 'your_secret_key'  # SESSION TOKEN VARIABLE
 
 # API-Daten
 api_key = 'LAST_FM_API_HERE'
@@ -94,5 +94,5 @@ def monitor():
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    #app.run(host='0.0.0.0', port=5000, debug=True)
+    #app.run(host='0.0.0.0', port=5000, debug=True) #Only uncomment if you want to pu it on a linux server. WARNING: Sessiontoken unencrypted.
     app.run(port=5000)
