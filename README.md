@@ -29,7 +29,7 @@ Before you start, ensure you have the following:
 3. **Install required modules:**
    - Open Command Prompt and run:
      ```bash
-     pip install flask requests
+     pip install flask requests aiotube
      ```
 
 ### On Linux
@@ -47,16 +47,10 @@ Before you start, ensure you have the following:
      pip3 install flask requests
      ```
 
-## Getting API Keys for YouTube and Last.fm
+## Getting API Keys for Last.fm
 
-1. **YouTube Data API:**
-   - Go to the [Google Developers Console](https://console.cloud.google.com/apis/api/youtube.googleapis.com/).
-   - Create a new project or select an existing one.
-   - Navigate to the "Credentials" section.
-   - Click "Create Credentials" and choose "API Key".
-   - Save the API Key for use in the app.
 
-2. **Last.fm API:**
+**Last.fm API:**
    - Visit the [Last.fm API page](https://www.last.fm/api/).
    - Sign up for a Last.fm account if you don't have one.
    - Go to the "Create an API Account" section.
@@ -69,13 +63,11 @@ Open the `app.py` file and locate the following lines:
 ```python
 # API-Daten
 api_key = 'LAST_FM_API_HERE'
-youtube_api_key = 'YOUTUBE_API_HERE'
 ```
 
 # API-DATA
 api_key = 'LAST_FM_API_HERE'
-youtube_api_key = 'YOUTUBE_API_HERE'
-Replace `'LAST_FM_API_HERE'` with your Last.fm API Key and `'YOUTUBE_API_HERE'` with your YouTube Data API Key.
+Replace `'LAST_FM_API_HERE'` with your Last.fm API Key.
 
 ## Getting the Session Token
 
