@@ -103,4 +103,4 @@ Copy this session token and ensure it is used in your application as required.
 Have fun with your cool new Bio
 ## Support
 
-[Y99 Supoprt room](https://y99.in/r/1808532)
+[Y99 Support room](https://y99.in/r/1808532)
