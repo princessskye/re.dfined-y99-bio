@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y99 Bio Updater</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #333;
+            color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #424242;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #666;
+            border-radius: 4px;
+            background: #555;
+            color: #f5f5f5;
+        }
+        input[type="submit"] {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #3700b3;
+        }
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        .form-group small {
+            display: block;
+            margin-top: 5px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Y99 Bio Updater</h1>
+        
+        <!-- Form to start monitoring -->
+        <form id="monitoringForm" method="post" action="/start_monitoring">
+            <div class="form-group">
+                <label for="lastfm_username">Last.fm Username:</label>
+                <input type="text" id="lastfm_username" name="lastfm_username" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="y99_session_token">Y99 Session Token:</label>
+                <input type="text" id="y99_session_token" name="y99_session_token" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="bio_template">Bio Template:</label>
+                <textarea id="bio_template" name="bio_template" required></textarea>
+                <small>Use <code>{song_title}</code> and <code>{youtube_link}</code> as placeholders.</small>
+            </div>
+            
+            <input type="submit" value="Start Monitoring">
+        </form>
+    </div>
+    <script>
+        // Load saved values from local storage
+        window.onload = function() {
+            document.getElementById('lastfm_username').value = localStorage.getItem('lastfm_username') || '';
+            document.getElementById('y99_session_token').value = localStorage.getItem('y99_session_token') || '';
+            document.getElementById('bio_template').value = localStorage.getItem('bio_template') || '';
+        };
+
+        // Save values to local storage on input change
+        document.getElementById('monitoringForm').addEventListener('input', function() {
+            localStorage.setItem('lastfm_username', document.getElementById('lastfm_username').value);
+            localStorage.setItem('y99_session_token', document.getElementById('y99_session_token').value);
+            localStorage.setItem('bio_template', document.getElementById('bio_template').value);
+        });
+    </script>
+
+</body>
+</html>
