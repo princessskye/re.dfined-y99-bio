@@ -1,5 +1,6 @@
 # RE.DFINED Y99 BIO
-
+> [!CAUTION]
+> THIS APP USES THE SESSION TOKEN! NEVER GIVE THIS TO ANYONE!
 ## Introduction
 
 RE.DFINED Y99 BIO is a Python application designed to automatically update your Y99 bio with the current song you're listening to. By integrating with YouTube and Last.fm APIs, this app fetches the song information and updates your bio accordingly. This README provides a comprehensive guide to set up and configure the app.
