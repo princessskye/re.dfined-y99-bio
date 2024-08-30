@@ -82,11 +82,12 @@ Copy this session token and ensure it is used in your application as required.
 ## Usage
 
 1. **Run the App:**
+   - Open the folder in witch the app.py file is located (on windows just type cmd in the navigation bar of the folder)
    - Execute the following command in your terminal or command prompt:
      ```bash
      python app.py
      ```
-2. **Monitor:**
+3. **Monitor:**
    - The app will fetch the current song from Last.fm and update your Y99 bio accordingly.
 
 ## Troubleshooting
