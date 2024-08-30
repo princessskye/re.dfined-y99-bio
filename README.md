@@ -80,7 +80,8 @@ Replace `'LAST_FM_API_HERE'` with your Last.fm API Key.
 Copy this session token and ensure it is used in your application as required.
 
 ## Usage
-
+> [!WARNING]
+> BACKUP YOUR BIO BEFOREHAND!
 1. **Run the App:**
    - Open the folder in witch the app.py file is located (on windows just type cmd in the navigation bar of the folder)
    - Execute the following command in your terminal or command prompt:
