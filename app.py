@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 import requests
 import time
 import threading
+import urllib.parse
 from aiotube import Search
 
 app = Flask(__name__)
@@ -29,9 +30,11 @@ def get_current_song(api_key, username):
 
 def get_youtube_link(song_name, artist_name):
     search_query = f'{song_name} {artist_name}'
+    encoded_query = urllib.parse.quote(search_query)  # URL-encode the search query
+    
     try:
         # Search for videos using aiotube
-        results = search.videos(search_query, limit=1)
+        results = search.videos(encoded_query, limit=1)
         if results and len(results) > 0:
             video_id = results[0]
             youtube_link = f'https://www.youtube.com/watch?v={video_id}'
