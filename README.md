@@ -20,8 +20,7 @@ Before you start, ensure you have the following:
 ### On Windows
 
 1. **Install Python:**
-   - Download the Python installer from the [official Python website](https://www.python.org/downloads/).
-   - Run the installer and make sure to check the box "Add Python to PATH" before clicking "Install Now".
+   - Download the Python 3. from the Microsoft Store.
 
 2. **Install pip:**
    - Pip is included by default with Python installations. You can verify it by running `pip --version` in Command Prompt.
