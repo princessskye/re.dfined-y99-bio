@@ -5,60 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RE.DFINED BIO</title>
 	    <style>
-/* Benutzerdefinierte Scrollbar für das Textarea-Feld */
+/* Custom Scrollbar */
 textarea::-webkit-scrollbar {
-    width: 12px; /* Breite der Scrollbar */
+    width: 12px; 
 }
 
 /* Track */
 textarea::-webkit-scrollbar-track {
-    background: rgba(241, 241, 241, 0.5); /* Translucente Hintergrundfarbe des Tracks */
-    border-radius: 10px; /* Abrunden des Tracks */
+    background: rgba(241, 241, 241, 0.5); 
+    border-radius: 10px; 
 }
 
 /* Handle */
 textarea::-webkit-scrollbar-thumb {
-    background: rgba(214, 214, 214, 0.8); /* Translucente Farbe des Scrollbalkens */
-    border-radius: 10px; /* Abrunden des Scrollbalkens */
+    background: rgba(214, 214, 214, 0.8); 
+    border-radius: 10px;
 }
 
 /* Handle on hover */
 textarea::-webkit-scrollbar-thumb:hover {
-    background: rgba(85, 85, 85, 0.8); /* Translucente Farbe des Scrollbalkens bei Hover */
-}
+    background: rgba(85, 85, 85, 0.8); 
 
+}
 textarea {
-    resize: none; /* Verhindert das Ändern der Größe durch den Benutzer */
+    resize: none; 
 	height: 40%;
 }
 
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        // Funktion zum Laden des Themes aus dem localStorage
+      
         function loadTheme() {
-            const theme = localStorage.getItem('theme') || 'dark';  // Standardmäßig auf "dark" setzen
+            const theme = localStorage.getItem('theme') || 'dark';  
             if (theme === 'dark') {
                 document.documentElement.classList.add('dark');
-                document.getElementById('theme-toggle').checked = true;  // Setze den Schalter auf aktiv
+                document.getElementById('theme-toggle').checked = true;  
             } else {
                 document.documentElement.classList.remove('dark');
-                document.getElementById('theme-toggle').checked = false; // Setze den Schalter auf inaktiv
+                document.getElementById('theme-toggle').checked = false; 
             }
         }
 
-        // Funktion zum Umschalten zwischen Dark und Light Mode
+        
         function toggleDarkMode() {
             const htmlElement = document.documentElement;
-            const isDarkMode = htmlElement.classList.toggle('dark');  // Fügt 'dark' hinzu oder entfernt sie
-            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');  // Speichere die Präferenz im localStorage
+            const isDarkMode = htmlElement.classList.toggle('dark');  
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');  
         }
 
-        // Beim Laden der Seite das Theme laden
+       
         window.onload = function() {
             loadTheme();
 
-            // Lade gespeicherte Formulareingaben
+            
             document.getElementById('lastfm_username').value = localStorage.getItem('lastfm_username') || '';
             document.getElementById('y99_session_token').value = localStorage.getItem('y99_session_token') || '';
             document.getElementById('bio_template').value = localStorage.getItem('bio_template') || '';
@@ -68,7 +68,7 @@ textarea {
 <body class="bg-gray-900 text-white dark:bg-gray-900 dark:text-white min-h-screen flex items-center justify-center backdrop-filter backdrop-blur-lg" style="background-image: url('https://i.redd.it/sk6aqjh1ro371.png'); background-size: cover;">
 
 
-    <!-- Container mit translucenter Hintergrund und Blur-Effekt -->
+    
     <div class="container max-w-lg mx-auto bg-white bg-opacity-30 dark:bg-gray-800 dark:bg-opacity-30 backdrop-blur-md rounded-xl shadow-lg p-8 text-center">
         <h1 class="text-3xl font-bold text-gray-100 dark:text-gray-100 mb-6">🎵 RE.DFINED BIO 🎵</h1>
 
@@ -103,7 +103,6 @@ textarea {
     </div>
 
     <script>
-        // Speichere die Formulareingaben im localStorage
         document.getElementById('monitoringForm').addEventListener('input', function() {
             localStorage.setItem('lastfm_username', document.getElementById('lastfm_username').value);
             localStorage.setItem('y99_session_token', document.getElementById('y99_session_token').value);
