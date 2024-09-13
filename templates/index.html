@@ -6,7 +6,7 @@
     <title>RE.DFINED BIO</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-       
+      
         textarea {
             resize: none; 
         }
@@ -16,7 +16,7 @@
         }
 
         textarea::-webkit-scrollbar-track {
-            background: rgba(136, 136, 136, 0.2); 
+            background: rgba(136, 136, 136, 0.2);
             border-radius: 10px;
         }
 
@@ -26,36 +26,42 @@
         }
 
         textarea::-webkit-scrollbar-thumb:hover {
-            background: rgba(85, 85, 85, 0.8); 
+            background: rgba(85, 85, 85, 0.8);
         }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
     </style>
     <script>
-        
+
         function saveFormData() {
             localStorage.setItem('lastfm_username', document.getElementById('lastfm_username').value);
             localStorage.setItem('y99_session_token', document.getElementById('y99_session_token').value);
             localStorage.setItem('bio_template', document.getElementById('bio_template').value);
         }
 
-        
+
         document.addEventListener('DOMContentLoaded', function() {
-            
+
             document.getElementById('lastfm_username').value = localStorage.getItem('lastfm_username') || '';
             document.getElementById('y99_session_token').value = localStorage.getItem('y99_session_token') || '';
             document.getElementById('bio_template').value = localStorage.getItem('bio_template') || '';
 
-            
+
             document.getElementById('monitoringForm').addEventListener('input', saveFormData);
         });
     </script>
 </head>
 <body class="dark:bg-gray-900 text-white min-h-screen flex items-center justify-center backdrop-filter backdrop-blur-lg" style="background-image: url('https://cdn.neowin.com/news/images/galleries/4686/1654793763_2-ventura-bloom-dark.jpg'); background-size: cover;">
 
-  
-    <div class="container max-w-lg mx-auto bg-black bg-opacity-30 backdrop-blur-md rounded-xl shadow-lg p-8 text-center">
-        <h1 class="text-3xl font-bold text-gray-100 mb-6">🎵 RE.DFINED BIO 🎵</h1> 
 
-      
+    <div class="container max-w-lg mx-auto bg-black bg-opacity-30 backdrop-blur-md rounded-xl shadow-lg p-8 text-center">
+
+        <img class="center" style="height:200px;" src="https://cloud.re.dfined.net/apps/files_sharing/publicpreview/k6sCc87WjRDbkHM?file=/&fileId=2041&x=1924&y=924&a=true&etag=25010b217b1059db37a0f3aa37026641" alt="Logo">
+        
+
         <form id="monitoringForm" method="post" action="/start_monitoring" class="space-y-4">
             <div class="form-group">
                 <label for="lastfm_username" class="block text-left dark:text-gray-300 font-semibold mb-2">Last.fm Username:</label>
