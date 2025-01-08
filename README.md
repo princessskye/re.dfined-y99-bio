@@ -1,4 +1,4 @@
-> [!INFO]
+> [!TIP]
 > There is a Chrome plugin now! https://chromewebstore.google.com/detail/y99-bio-updater/hgfccbmbbifbfdilnilmapfpaffjbojn?hl=de&authuser=0
 # RE.DFINED Y99 BIO
 > [!CAUTION]
