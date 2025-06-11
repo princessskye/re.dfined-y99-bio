@@ -14,7 +14,7 @@ RE.DFINED Y99 BIO is a Python application designed to automatically update your 
 Before you start, ensure you have the following:
 - Python 3.6 or higher
 - pip (Python package installer)
-- Access to YouTube Data API and Last.fm API
+- Access to Last.fm API
 - A Last.fm account connected to your music service of choice. [Last.fm Help](https://www.last.fm/about/trackmymusic)
 
 ## Install Instructions
