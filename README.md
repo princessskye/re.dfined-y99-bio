@@ -80,6 +80,8 @@ Replace `'LAST_FM_API_HERE'` with your Last.fm API Key.
 
 Copy this session token and ensure it is used in your application as required.
 
+I will realease my Beta Plugin to Extract the token quickly later on.
+
 ## Usage
 > [!WARNING]
 > BACKUP YOUR BIO BEFOREHAND!
