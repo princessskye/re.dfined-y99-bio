@@ -89,6 +89,11 @@ Copy this session token and ensure it is used in your application as required.
      ```bash
      python app.py
      ```
+
+2. **Web UI:**
+   - Open your Webbrowser on http://localhost:5000 or if you host it on a server http://server-ip:5000
+
+     
 3. **Monitor:**
    - The app will fetch the current song from Last.fm and update your Y99 bio accordingly.
 
